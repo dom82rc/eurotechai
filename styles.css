@@ -1,0 +1,107 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1a1a3d, #2e2e5e);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Headings and text */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+/* Domain list */
+.domain-list {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.domain-list p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+/* CTA button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a3d;
+  background: #00d4ff;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background: #00aaff;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .tagline {
+    font-size: 1.1rem;
+  }
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
